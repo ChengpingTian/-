@@ -1,11 +1,20 @@
 <template>
     <div>
-        你好啊
-    </div>
+        <Header></Header>
+   </div>
 </template>
 <script>
-
-export default{
+import Header from '@/components/Header'
+export default {
+  data () {
+    return {
+    }
+  },
+  methods: {
+  },
+  components: {
+    Header
+  }
 }
 </script>
 <style>
