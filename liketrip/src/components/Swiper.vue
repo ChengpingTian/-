@@ -2,7 +2,7 @@
 <div class="Swiper-wraper">
     <swiper :options="swiperOption">
         <!-- slides -->
-        <swiper-slide v-for="(item, index) in SwipeList" :key="index">
+        <swiper-slide v-for="(item, index) in list" :key="index">
             <img class="banner-img" :src="item.imgUrl" alt="">
         </swiper-slide>
         <!-- Optional controls -->
@@ -14,6 +14,9 @@
 <script>
 export default {
   name: 'carrousel',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
